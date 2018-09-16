@@ -15,18 +15,20 @@ This app uses a cutom protocol over TCP.
 |Name|Description|
 |-----------|-------------------|
 |`FILE`|A file provided to the client or server|
+|`GET-FILE`|A request for a file|
+|  |  |
 |`LIST`|List all files available|
 |`AVAILABLE`|List all available files|
-|`GET-FILE`|A request for a file|
-|||
+|  |  |
 |`ERR`|A error, this should be written to a log|
 |`MSG`|Display a message to the user|
-|||
+|  |  |
 |`GET-VER`|A request to get the version of the application|
 |`VER`|The response to `GET-VER`|
 
 ## Syntax
 All lines are delimited by `\n`
+#  
 ### `LIST` and `AVAILABLE`
 Request:
 >LIST
@@ -35,7 +37,7 @@ Sample Response:
 >AVAILABLE  
 >photos/ex1.png  
 >photos/ex2.png  
-
+#  
 ### `FILE` and `GET-FILE`
 Request:
 >GET-FILE  
@@ -48,6 +50,7 @@ Sample Response:
 >{{FILE CONTENT}}sdafjklhskldafkhdasfkhldsafjk  
 >dskajlfhkldsafhklsdahfkjlhsdaklfhksjldfhdskla
 
+#  
 ### `GET-VER` and `VER`
 Request:
 >GET-VER    
@@ -58,6 +61,7 @@ Response:
 >{{String Denoting Version}}  
 >{{Quick Blurb goes here...}}  
 
+#  
 ### `ERR` and `MSG`
 
 Request:
