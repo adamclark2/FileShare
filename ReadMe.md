@@ -66,11 +66,11 @@ Response:
 
 Request:
 >ERR  
->2 {{Number of lines}}
->Error line 1
->Error line 2
+>2 {{Number of lines}}  
+>Error line 1  
+>Error line 2  
 
 Request
 >MSG  
->1
->You cannot access this server.
+>1  
+>You cannot access this server.  
